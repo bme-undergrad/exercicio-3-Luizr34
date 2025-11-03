@@ -8,10 +8,13 @@ function [mu] = exercicio3(t, NC)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
+t_new = t-t(1);
 yi = log(NC);
-a = polyfit(t, yi, 1);
+a = polyfit(t_new, yi, 1);
 
 % mantenha essas duas linhas finais, subtituindo mu pelo valor que você calculou
 mu = a(1);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+endfunction
